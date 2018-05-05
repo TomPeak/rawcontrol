@@ -67,13 +67,18 @@ void loop()
         Keyboard.press(KEY_LEFT_GUI);
         Keyboard.press(KEY_LEFT_SHIFT);
         Keyboard.press('v');
-    
+        delay(200);
+        Keyboard.releaseAll();
+        delay(200);
    }
    // Copy Ajustment
    if (analogRead(A1) == 1) {
         Keyboard.press(KEY_LEFT_GUI);
         Keyboard.press(KEY_LEFT_SHIFT);
         Keyboard.press('c');
+        delay(200);
+        Keyboard.releaseAll();
+        delay(200);
    }
   
   
