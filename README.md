@@ -10,7 +10,7 @@
 - Bluethooth
 
 ### Setup
-[https://github.com/TomPeak/rawcontrol/wiki See WIKI]
+https://github.com/TomPeak/rawcontrol/wiki
 
 
 Follow #rawcontrol on instagramm
