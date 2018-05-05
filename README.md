@@ -12,5 +12,7 @@
 ### Setup
 https://github.com/TomPeak/rawcontrol/wiki
 
+### Future
+Can be used for any software. Do a VideoBoard for AfterEfects, FinalCut or Premiere.
 
 Follow #rawcontrol on instagramm
