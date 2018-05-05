@@ -1,18 +1,9 @@
-int val;
 #include <Encoder.h>
 
 
 
 Encoder myEnc1(A8, A9);
 Encoder myEnc2(A7, A6);
-
-void b1Click() {  
-    Serial.print("button 1 clicked"); 
-}
-void b2Click() {  
-    Serial.print("button 2 clicked"); 
-}
-
 
 
 void setup()
@@ -24,7 +15,8 @@ void setup()
 
 long oldPosition1  = -999;
 long oldPosition2  = -999;
-
+long newPosition1  = -999;
+long newPosition2  = -999;
 void loop()   
 {
  
@@ -48,6 +40,7 @@ void loop()
       delay(200);
       Keyboard.releaseAll();
    }
+   // Contrast
    long newPosition2 = myEnc2.read();
    if(oldPosition2!=newPosition2){
       if (newPosition2 > oldPosition2) {
@@ -69,13 +62,18 @@ void loop()
       delay(200);
       Keyboard.releaseAll();
    }
-   
+   // Apply Ajustment
    if (analogRead(A3) == 1) {
-    Serial.println("button1");
+        Keyboard.press(KEY_LEFT_GUI);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press('v');
     
    }
+   // Copy Ajustment
    if (analogRead(A1) == 1) {
-    Serial.println("button2");
+        Keyboard.press(KEY_LEFT_GUI);
+        Keyboard.press(KEY_LEFT_SHIFT);
+        Keyboard.press('c');
    }
   
   
