@@ -9,5 +9,8 @@
 ### Wish
 - Bluethooth
 
+### Setup
+[https://github.com/TomPeak/rawcontrol/wiki See WIKI]
+
 
 Follow #rawcontrol on instagramm
